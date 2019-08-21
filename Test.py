@@ -3,6 +3,8 @@ import requests
 x = input("Choose Your symbol: ")
 y = input("Input Date (yyyy-mm-dd): ")
 
+# Can Change outputsize to compact, to reduce the amount of data
+
 
 def fin_parse(x):
     req = requests.get(
