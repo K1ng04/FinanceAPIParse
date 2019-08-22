@@ -1,5 +1,6 @@
 # API from Alphavantage.co/
 import requests
+from statistics import mean
 x = input("Choose Your symbol: ")
 y = input("Input Date (yyyy-mm-dd): ")
 
@@ -19,7 +20,7 @@ def fin_parse(x):
     print(f"High: {b}")
     print(f"low: {c}")
     print(f"Close: {d}")
-    print(f"Avg: {(b + c)/2}")
+    print(f"Avg: {mean([b, c])}")
 
 
 fin_parse(x)
